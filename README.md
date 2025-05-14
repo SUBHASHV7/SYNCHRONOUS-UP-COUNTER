@@ -45,12 +45,12 @@ Developed by: SUBHASH V
 RegisterNumber: 212224240163
 
 ```
-module syn_counter(out,clk,rst);
-input clk,rst;
+module ex11(out,clk,rstn);
+input clk,rstn;
 output reg [3:0]out;
 always @ (posedge clk)
 begin
-   if(rst)
+   if(!rstn)
      out<=0;
    else 
      out <= out+1;
@@ -59,16 +59,16 @@ endmodule
 ```
 **RTL LOGIC UP COUNTER**
 
-![443473301-959b6827-9dc1-48be-bfd2-cb34b76fa7ae](https://github.com/user-attachments/assets/410b84aa-90db-4881-9aec-376ddc2809f6)
+![442651941-4496aa4e-dbd0-4c0d-973b-25cc26cdc4e2](https://github.com/user-attachments/assets/d9abc84d-2736-4166-bcbf-3cb14da1e1fc)
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
-![443473849-692000c1-f879-480e-ba09-0f53f485e2fe](https://github.com/user-attachments/assets/334ca080-b7ca-4f59-a7e4-370cb5c848fb)
+![442652015-1fae5b42-5a83-43c7-98b3-b927ee499e0b](https://github.com/user-attachments/assets/b48499f8-bf74-46ba-8bdc-5341aced2bf0)
 
 **TRUTH TABLE**
 
-![443473549-e02570c9-61ac-443f-9313-bfcf0b14550a](https://github.com/user-attachments/assets/8a1dc735-95d6-48ab-aa27-949b3883d19b)
+![442652224-74d53326-3d97-43ff-afaf-7c4a0238431d](https://github.com/user-attachments/assets/9c037fd2-9cb4-41e5-9a72-4b1cecf55983)
 
 **RESULTS**
 
-Thus the given 4 bit synchronous up counter are implimented using and validate functionality are verified using verilog programming.
+Thus implemented a 4 bit synchronous up counter and validated its functionality.
